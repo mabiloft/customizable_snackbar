@@ -12,10 +12,12 @@ class CustomizableSnackbarOverlay extends ConsumerStatefulWidget {
   ///
   /// Returns a state object that manages the snackbar queue and animations.
   @override
-  ConsumerState<CustomizableSnackbarOverlay> createState() => _CustomizableSnackbarManagerState();
+  ConsumerState<CustomizableSnackbarOverlay> createState() =>
+      _CustomizableSnackbarManagerState();
 }
 
-class _CustomizableSnackbarManagerState extends ConsumerState<CustomizableSnackbarOverlay> {
+class _CustomizableSnackbarManagerState
+    extends ConsumerState<CustomizableSnackbarOverlay> {
   final heights = <int, double>{};
   double totalHeight = 0;
 
@@ -44,7 +46,9 @@ class _CustomizableSnackbarManagerState extends ConsumerState<CustomizableSnackb
               left: 0,
               right: 0,
               child: IgnorePointer(
-                ignoring: value.queue.where((element) => !element.isHiddenOrDismissed).isEmpty,
+                ignoring: value.queue
+                    .where((element) => !element.isHiddenOrDismissed)
+                    .isEmpty,
                 child: Material(
                   color: Colors.transparent,
                   child: _MeasureSizeWidget(
@@ -59,14 +63,18 @@ class _CustomizableSnackbarManagerState extends ConsumerState<CustomizableSnackb
                             direction: DismissDirection.up,
                             key: Key(value.queue.elementAt(i).id),
                             onDismissed: (direction) {
-                              ref.read(snackbarQueueProvider.notifier).dismiss(value.queue.elementAt(i).id);
+                              ref
+                                  .read(snackbarQueueProvider.notifier)
+                                  .dismiss(value.queue.elementAt(i).id);
                             },
                             child: AnimatedOpacity(
-                              opacity: value.queue.elementAt(i).isVisible ? 1 : 0,
+                              opacity:
+                                  value.queue.elementAt(i).isVisible ? 1 : 0,
                               duration: const Duration(milliseconds: 300),
                               child: Padding(
                                 padding: const EdgeInsets.only(bottom: 16),
-                                child: value.queue.elementAt(i).builder(context),
+                                child:
+                                    value.queue.elementAt(i).builder(context),
                               ).animate().moveY(
                                     begin: -50,
                                     end: 0,
