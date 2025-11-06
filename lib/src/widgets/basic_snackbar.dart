@@ -3,7 +3,8 @@ import 'dart:ui';
 import 'package:figma_squircle/figma_squircle.dart';
 import 'package:flutter/material.dart';
 
-/// A basic snackbar implementation with a title, optional message and leading widget.
+/// A basic snackbar implementation with a title,
+/// optional message and leading widget.
 class BasicSnackbar extends StatelessWidget {
   /// Creates a new [BasicSnackbar] widget.
   const BasicSnackbar({
@@ -54,9 +55,12 @@ class BasicSnackbar extends StatelessWidget {
   /// Optional message style override for the snackbar.
   final TextStyle? messageStyle;
 
-  /// Builds the basic snackbar widget with title, message, and optional leading widget.
+  /// Builds the basic snackbar widget with title, message,
+  /// and optional leading widget.
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
+    final crossAxisAlignment = contentAlignment ?? CrossAxisAlignment.start;
     return Material(
       color: Colors.transparent,
       child: GestureDetector(
@@ -73,7 +77,10 @@ class BasicSnackbar extends StatelessWidget {
                 child: BackdropFilter(
                   filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
                   child: ColoredBox(
-                    color: backgroundColor ?? Colors.white.withValues(alpha: 0.75),
+                    color: backgroundColor ??
+                        Colors.white.withValues(
+                          alpha: 0.75,
+                        ),
                     child: Padding(
                       padding: EdgeInsets.zero,
                       child: Row(
@@ -87,22 +94,22 @@ class BasicSnackbar extends StatelessWidget {
                                     vertical: 16,
                                   ),
                               child: Column(
-                                crossAxisAlignment: contentAlignment ?? CrossAxisAlignment.start,
+                                crossAxisAlignment: crossAxisAlignment,
                                 children: [
                                   Text(
                                     title,
                                     style: titleStyle ??
-                                        Theme.of(context).textTheme.titleMedium?.copyWith(
-                                              color: Colors.black,
-                                            ),
+                                        textTheme.titleMedium?.copyWith(
+                                          color: Colors.black,
+                                        ),
                                   ),
                                   if (message != null)
                                     Text(
                                       message!,
                                       style: messageStyle ??
-                                          Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                                color: Colors.black,
-                                              ),
+                                          textTheme.bodyMedium?.copyWith(
+                                            color: Colors.black,
+                                          ),
                                       maxLines: 3,
                                     ),
                                 ],

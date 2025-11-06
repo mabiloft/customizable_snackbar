@@ -8,8 +8,11 @@ class CustomizableSnackbarOverlay extends ConsumerStatefulWidget {
   /// Creates a new [CustomizableSnackbarOverlay] widget.
   const CustomizableSnackbarOverlay({super.key});
 
+  /// Creates the state for this widget.
+  ///
+  /// Returns a state object that manages the snackbar queue and animations.
   @override
-  ConsumerState<ConsumerStatefulWidget> createState() => _CustomizableSnackbarManagerState();
+  ConsumerState<CustomizableSnackbarOverlay> createState() => _CustomizableSnackbarManagerState();
 }
 
 class _CustomizableSnackbarManagerState extends ConsumerState<CustomizableSnackbarOverlay> {
