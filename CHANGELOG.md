@@ -1,0 +1,31 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2025-01-XX
+
+### Added
+
+- Initial release of `customizable_snackbar`
+- `CustomizableSnackbar` class for managing snackbars
+- `BasicSnackbar` widget for displaying basic snackbars with title and message
+- `CustomSnackbar` widget for creating custom snackbar widgets
+- `SnackbarOverlay` widget for managing snackbar display and animations
+- Queue management system with configurable maximum queue size
+- Auto-hide functionality with configurable duration
+- Dismissible snackbars with swipe-up gesture
+- Smooth animations using `flutter_animate`
+- Backdrop blur effect for glassmorphism
+- Comprehensive documentation and examples
+
+### Features
+
+- Queue management with automatic positioning
+- Customizable appearance (colors, styles, corner radius)
+- Support for custom widgets
+- Riverpod integration for state management
+- Responsive positioning to avoid overlap
+- Multiple snackbar support with stacking
