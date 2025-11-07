@@ -8,7 +8,7 @@ part 'snackbar_queue_provider.g.dart';
 
 /// A snackbar queue entry.
 @freezed
-class SnackbarQueueEntry with _$SnackbarQueueEntry {
+abstract class SnackbarQueueEntry with _$SnackbarQueueEntry {
   /// Creates a new snackbar queue entry.
   const factory SnackbarQueueEntry({
     /// Unique identifier for the snackbar.
@@ -33,7 +33,7 @@ extension SnackbarQueueEntryX on SnackbarQueueEntry {
 
 /// The snackbar queue state.
 @freezed
-class SnackbarQueueState with _$SnackbarQueueState {
+abstract class SnackbarQueueState with _$SnackbarQueueState {
   /// Creates a new snackbar queue state.
   const factory SnackbarQueueState({
     /// List of snackbar entries in the queue.
@@ -56,8 +56,11 @@ class SnackbarQueue extends _$SnackbarQueue {
   /// Adds a new snackbar to the queue.
   void add(WidgetBuilder builder, {String? id}) {
     _cleanQueueIfNeeded();
-    final visibleQueue =
-        state.queue.where((element) => element.isVisible).toList();
+    final visibleQueue = state.queue
+        .where(
+          (element) => element.isVisible,
+        )
+        .toList();
     if (visibleQueue.length >= kMaxQueueSize) {
       hideFirst();
     }
@@ -85,20 +88,23 @@ class SnackbarQueue extends _$SnackbarQueue {
 
   /// Hides the first visible snackbar in the queue.
   void hideFirst() {
-    final indexOfFirstVisibleItem =
-        state.queue.indexWhere((element) => element.isVisible);
-    if (indexOfFirstVisibleItem == -1) return;
+    final idxFirstVisibleItem = state.queue.indexWhere(
+      (element) => element.isVisible,
+    );
+    if (idxFirstVisibleItem == -1) return;
 
     final newQueue = List<SnackbarQueueEntry>.from(state.queue);
-    newQueue[indexOfFirstVisibleItem] =
-        newQueue[indexOfFirstVisibleItem].copyWith(isVisible: false);
+    newQueue[idxFirstVisibleItem] = newQueue[idxFirstVisibleItem].copyWith(
+      isVisible: false,
+    );
     state = state.copyWith(queue: newQueue);
   }
 
   /// Hides a specific snackbar by its ID.
   void hide(String id) {
-    final indexOfItemToHide =
-        state.queue.indexWhere((element) => element.id == id);
+    final indexOfItemToHide = state.queue.indexWhere(
+      (element) => element.id == id,
+    );
     if (indexOfItemToHide == -1) return;
 
     final newQueue = List<SnackbarQueueEntry>.from(state.queue);
@@ -112,19 +118,24 @@ class SnackbarQueue extends _$SnackbarQueue {
 
   /// Dismisses a specific snackbar by its ID.
   void dismiss(String id) {
-    final indexOfItemToDismiss =
-        state.queue.indexWhere((element) => element.id == id);
+    final indexOfItemToDismiss = state.queue.indexWhere(
+      (element) => element.id == id,
+    );
     if (indexOfItemToDismiss == -1) return;
 
     final newQueue = List<SnackbarQueueEntry>.from(state.queue);
-    newQueue[indexOfItemToDismiss] =
-        newQueue[indexOfItemToDismiss].copyWith(isDismissed: true);
+    newQueue[indexOfItemToDismiss] = newQueue[indexOfItemToDismiss].copyWith(
+      isDismissed: true,
+    );
     state = state.copyWith(queue: newQueue);
   }
 
   void _cleanQueueIfNeeded() {
-    final newQueue =
-        state.queue.where((element) => !element.isHiddenOrDismissed).toList();
+    final newQueue = state.queue
+        .where(
+          (element) => !element.isHiddenOrDismissed,
+        )
+        .toList();
     if (newQueue.isEmpty) {
       state = state.copyWith(queue: []);
     }
