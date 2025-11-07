@@ -22,7 +22,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  customizable_snackbar: ^1.1.1
+  customizable_snackbar: ^1.1.2
 ```
 
 Then run:
@@ -74,7 +74,7 @@ class _MyAppState extends ConsumerState<MyApp> {
       builder: (context, child) => Stack(
         children: [
           child!,
-          const SnackbarOverlay(),
+          const CustomizableSnackbarOverlay(),
         ],
       ),
     );
@@ -100,7 +100,7 @@ class _MyAppState extends ConsumerState<MyApp> {
         body: Stack(
           children: [
             const YourContent(),
-            const SnackbarOverlay(),
+            const CustomizableSnackbarOverlay(),
           ],
         ),
       ),
@@ -256,7 +256,7 @@ A widget that positions a snackbar at the top of the screen.
 
 - `builder` (required): Builder function that creates the snackbar content
 
-### SnackbarOverlay
+### CustomizableSnackbarOverlay
 
 A widget that manages the display and animation of snackbars. This should be added to your app's widget tree.
 
