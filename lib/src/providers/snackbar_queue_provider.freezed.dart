@@ -1,5 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 // coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,71 +9,51 @@ part of 'snackbar_queue_provider.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// dart format off
 T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SnackbarQueueEntry {
   /// Unique identifier for the snackbar.
-  String get id;
+  String get id => throw _privateConstructorUsedError;
 
   /// Builder function for the snackbar content.
-  WidgetBuilder get builder;
+  WidgetBuilder get builder => throw _privateConstructorUsedError;
 
   /// Whether the snackbar is currently visible.
-  bool get isVisible;
+  bool get isVisible => throw _privateConstructorUsedError;
 
   /// Whether the snackbar has been dismissed.
-  bool get isDismissed;
+  bool get isDismissed => throw _privateConstructorUsedError;
 
   /// Create a copy of SnackbarQueueEntry
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $SnackbarQueueEntryCopyWith<SnackbarQueueEntry> get copyWith =>
-      _$SnackbarQueueEntryCopyWithImpl<SnackbarQueueEntry>(
-          this as SnackbarQueueEntry, _$identity);
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is SnackbarQueueEntry &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.builder, builder) || other.builder == builder) &&
-            (identical(other.isVisible, isVisible) ||
-                other.isVisible == isVisible) &&
-            (identical(other.isDismissed, isDismissed) ||
-                other.isDismissed == isDismissed));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, builder, isVisible, isDismissed);
-
-  @override
-  String toString() {
-    return 'SnackbarQueueEntry(id: $id, builder: $builder, isVisible: $isVisible, isDismissed: $isDismissed)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $SnackbarQueueEntryCopyWith<$Res> {
+abstract class $SnackbarQueueEntryCopyWith<$Res> {
   factory $SnackbarQueueEntryCopyWith(
-          SnackbarQueueEntry value, $Res Function(SnackbarQueueEntry) _then) =
-      _$SnackbarQueueEntryCopyWithImpl;
+          SnackbarQueueEntry value, $Res Function(SnackbarQueueEntry) then) =
+      _$SnackbarQueueEntryCopyWithImpl<$Res, SnackbarQueueEntry>;
   @useResult
   $Res call(
       {String id, WidgetBuilder builder, bool isVisible, bool isDismissed});
 }
 
 /// @nodoc
-class _$SnackbarQueueEntryCopyWithImpl<$Res>
+class _$SnackbarQueueEntryCopyWithImpl<$Res, $Val extends SnackbarQueueEntry>
     implements $SnackbarQueueEntryCopyWith<$Res> {
-  _$SnackbarQueueEntryCopyWithImpl(this._self, this._then);
+  _$SnackbarQueueEntryCopyWithImpl(this._value, this._then);
 
-  final SnackbarQueueEntry _self;
-  final $Res Function(SnackbarQueueEntry) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of SnackbarQueueEntry
   /// with the given fields replaced by the non-null parameter values.
@@ -85,197 +65,82 @@ class _$SnackbarQueueEntryCopyWithImpl<$Res>
     Object? isVisible = null,
     Object? isDismissed = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       id: null == id
-          ? _self.id
+          ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
       builder: null == builder
-          ? _self.builder
+          ? _value.builder
           : builder // ignore: cast_nullable_to_non_nullable
               as WidgetBuilder,
       isVisible: null == isVisible
-          ? _self.isVisible
+          ? _value.isVisible
           : isVisible // ignore: cast_nullable_to_non_nullable
               as bool,
       isDismissed: null == isDismissed
-          ? _self.isDismissed
+          ? _value.isDismissed
+          : isDismissed // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$SnackbarQueueEntryImplCopyWith<$Res>
+    implements $SnackbarQueueEntryCopyWith<$Res> {
+  factory _$$SnackbarQueueEntryImplCopyWith(_$SnackbarQueueEntryImpl value,
+          $Res Function(_$SnackbarQueueEntryImpl) then) =
+      __$$SnackbarQueueEntryImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String id, WidgetBuilder builder, bool isVisible, bool isDismissed});
+}
+
+/// @nodoc
+class __$$SnackbarQueueEntryImplCopyWithImpl<$Res>
+    extends _$SnackbarQueueEntryCopyWithImpl<$Res, _$SnackbarQueueEntryImpl>
+    implements _$$SnackbarQueueEntryImplCopyWith<$Res> {
+  __$$SnackbarQueueEntryImplCopyWithImpl(_$SnackbarQueueEntryImpl _value,
+      $Res Function(_$SnackbarQueueEntryImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of SnackbarQueueEntry
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? builder = null,
+    Object? isVisible = null,
+    Object? isDismissed = null,
+  }) {
+    return _then(_$SnackbarQueueEntryImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      builder: null == builder
+          ? _value.builder
+          : builder // ignore: cast_nullable_to_non_nullable
+              as WidgetBuilder,
+      isVisible: null == isVisible
+          ? _value.isVisible
+          : isVisible // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isDismissed: null == isDismissed
+          ? _value.isDismissed
           : isDismissed // ignore: cast_nullable_to_non_nullable
               as bool,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [SnackbarQueueEntry].
-extension SnackbarQueueEntryPatterns on SnackbarQueueEntry {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_SnackbarQueueEntry value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueEntry() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_SnackbarQueueEntry value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueEntry():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_SnackbarQueueEntry value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueEntry() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(
-            String id, WidgetBuilder builder, bool isVisible, bool isDismissed)?
-        $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueEntry() when $default != null:
-        return $default(
-            _that.id, _that.builder, _that.isVisible, _that.isDismissed);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(
-            String id, WidgetBuilder builder, bool isVisible, bool isDismissed)
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueEntry():
-        return $default(
-            _that.id, _that.builder, _that.isVisible, _that.isDismissed);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(
-            String id, WidgetBuilder builder, bool isVisible, bool isDismissed)?
-        $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueEntry() when $default != null:
-        return $default(
-            _that.id, _that.builder, _that.isVisible, _that.isDismissed);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 
-class _SnackbarQueueEntry implements SnackbarQueueEntry {
-  const _SnackbarQueueEntry(
+class _$SnackbarQueueEntryImpl implements _SnackbarQueueEntry {
+  const _$SnackbarQueueEntryImpl(
       {required this.id,
       required this.builder,
       required this.isVisible,
@@ -297,19 +162,16 @@ class _SnackbarQueueEntry implements SnackbarQueueEntry {
   @override
   final bool isDismissed;
 
-  /// Create a copy of SnackbarQueueEntry
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$SnackbarQueueEntryCopyWith<_SnackbarQueueEntry> get copyWith =>
-      __$SnackbarQueueEntryCopyWithImpl<_SnackbarQueueEntry>(this, _$identity);
+  String toString() {
+    return 'SnackbarQueueEntry(id: $id, builder: $builder, isVisible: $isVisible, isDismissed: $isDismissed)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _SnackbarQueueEntry &&
+            other is _$SnackbarQueueEntryImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.builder, builder) || other.builder == builder) &&
             (identical(other.isVisible, isVisible) ||
@@ -322,110 +184,77 @@ class _SnackbarQueueEntry implements SnackbarQueueEntry {
   int get hashCode =>
       Object.hash(runtimeType, id, builder, isVisible, isDismissed);
 
+  /// Create a copy of SnackbarQueueEntry
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'SnackbarQueueEntry(id: $id, builder: $builder, isVisible: $isVisible, isDismissed: $isDismissed)';
-  }
+  @pragma('vm:prefer-inline')
+  _$$SnackbarQueueEntryImplCopyWith<_$SnackbarQueueEntryImpl> get copyWith =>
+      __$$SnackbarQueueEntryImplCopyWithImpl<_$SnackbarQueueEntryImpl>(
+          this, _$identity);
 }
 
-/// @nodoc
-abstract mixin class _$SnackbarQueueEntryCopyWith<$Res>
-    implements $SnackbarQueueEntryCopyWith<$Res> {
-  factory _$SnackbarQueueEntryCopyWith(
-          _SnackbarQueueEntry value, $Res Function(_SnackbarQueueEntry) _then) =
-      __$SnackbarQueueEntryCopyWithImpl;
+abstract class _SnackbarQueueEntry implements SnackbarQueueEntry {
+  const factory _SnackbarQueueEntry(
+      {required final String id,
+      required final WidgetBuilder builder,
+      required final bool isVisible,
+      required final bool isDismissed}) = _$SnackbarQueueEntryImpl;
+
+  /// Unique identifier for the snackbar.
   @override
-  @useResult
-  $Res call(
-      {String id, WidgetBuilder builder, bool isVisible, bool isDismissed});
-}
+  String get id;
 
-/// @nodoc
-class __$SnackbarQueueEntryCopyWithImpl<$Res>
-    implements _$SnackbarQueueEntryCopyWith<$Res> {
-  __$SnackbarQueueEntryCopyWithImpl(this._self, this._then);
+  /// Builder function for the snackbar content.
+  @override
+  WidgetBuilder get builder;
 
-  final _SnackbarQueueEntry _self;
-  final $Res Function(_SnackbarQueueEntry) _then;
+  /// Whether the snackbar is currently visible.
+  @override
+  bool get isVisible;
+
+  /// Whether the snackbar has been dismissed.
+  @override
+  bool get isDismissed;
 
   /// Create a copy of SnackbarQueueEntry
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? id = null,
-    Object? builder = null,
-    Object? isVisible = null,
-    Object? isDismissed = null,
-  }) {
-    return _then(_SnackbarQueueEntry(
-      id: null == id
-          ? _self.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      builder: null == builder
-          ? _self.builder
-          : builder // ignore: cast_nullable_to_non_nullable
-              as WidgetBuilder,
-      isVisible: null == isVisible
-          ? _self.isVisible
-          : isVisible // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isDismissed: null == isDismissed
-          ? _self.isDismissed
-          : isDismissed // ignore: cast_nullable_to_non_nullable
-              as bool,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$SnackbarQueueEntryImplCopyWith<_$SnackbarQueueEntryImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 mixin _$SnackbarQueueState {
   /// List of snackbar entries in the queue.
-  List<SnackbarQueueEntry> get queue;
+  List<SnackbarQueueEntry> get queue => throw _privateConstructorUsedError;
 
   /// Create a copy of SnackbarQueueState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
   $SnackbarQueueStateCopyWith<SnackbarQueueState> get copyWith =>
-      _$SnackbarQueueStateCopyWithImpl<SnackbarQueueState>(
-          this as SnackbarQueueState, _$identity);
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is SnackbarQueueState &&
-            const DeepCollectionEquality().equals(other.queue, queue));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(queue));
-
-  @override
-  String toString() {
-    return 'SnackbarQueueState(queue: $queue)';
-  }
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract mixin class $SnackbarQueueStateCopyWith<$Res> {
+abstract class $SnackbarQueueStateCopyWith<$Res> {
   factory $SnackbarQueueStateCopyWith(
-          SnackbarQueueState value, $Res Function(SnackbarQueueState) _then) =
-      _$SnackbarQueueStateCopyWithImpl;
+          SnackbarQueueState value, $Res Function(SnackbarQueueState) then) =
+      _$SnackbarQueueStateCopyWithImpl<$Res, SnackbarQueueState>;
   @useResult
   $Res call({List<SnackbarQueueEntry> queue});
 }
 
 /// @nodoc
-class _$SnackbarQueueStateCopyWithImpl<$Res>
+class _$SnackbarQueueStateCopyWithImpl<$Res, $Val extends SnackbarQueueState>
     implements $SnackbarQueueStateCopyWith<$Res> {
-  _$SnackbarQueueStateCopyWithImpl(this._self, this._then);
+  _$SnackbarQueueStateCopyWithImpl(this._value, this._then);
 
-  final SnackbarQueueState _self;
-  final $Res Function(SnackbarQueueState) _then;
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
   /// Create a copy of SnackbarQueueState
   /// with the given fields replaced by the non-null parameter values.
@@ -434,176 +263,55 @@ class _$SnackbarQueueStateCopyWithImpl<$Res>
   $Res call({
     Object? queue = null,
   }) {
-    return _then(_self.copyWith(
+    return _then(_value.copyWith(
       queue: null == queue
-          ? _self.queue
+          ? _value.queue
+          : queue // ignore: cast_nullable_to_non_nullable
+              as List<SnackbarQueueEntry>,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$SnackbarQueueStateImplCopyWith<$Res>
+    implements $SnackbarQueueStateCopyWith<$Res> {
+  factory _$$SnackbarQueueStateImplCopyWith(_$SnackbarQueueStateImpl value,
+          $Res Function(_$SnackbarQueueStateImpl) then) =
+      __$$SnackbarQueueStateImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({List<SnackbarQueueEntry> queue});
+}
+
+/// @nodoc
+class __$$SnackbarQueueStateImplCopyWithImpl<$Res>
+    extends _$SnackbarQueueStateCopyWithImpl<$Res, _$SnackbarQueueStateImpl>
+    implements _$$SnackbarQueueStateImplCopyWith<$Res> {
+  __$$SnackbarQueueStateImplCopyWithImpl(_$SnackbarQueueStateImpl _value,
+      $Res Function(_$SnackbarQueueStateImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of SnackbarQueueState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? queue = null,
+  }) {
+    return _then(_$SnackbarQueueStateImpl(
+      queue: null == queue
+          ? _value._queue
           : queue // ignore: cast_nullable_to_non_nullable
               as List<SnackbarQueueEntry>,
     ));
   }
 }
 
-/// Adds pattern-matching-related methods to [SnackbarQueueState].
-extension SnackbarQueueStatePatterns on SnackbarQueueState {
-  /// A variant of `map` that fallback to returning `orElse`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_SnackbarQueueState value)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueState() when $default != null:
-        return $default(_that);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// Callbacks receives the raw object, upcasted.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case final Subclass2 value:
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_SnackbarQueueState value) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueState():
-        return $default(_that);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `map` that fallback to returning `null`.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case final Subclass value:
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_SnackbarQueueState value)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueState() when $default != null:
-        return $default(_that);
-      case _:
-        return null;
-    }
-  }
-
-  /// A variant of `when` that fallback to an `orElse` callback.
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return orElse();
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function(List<SnackbarQueueEntry> queue)? $default, {
-    required TResult orElse(),
-  }) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueState() when $default != null:
-        return $default(_that.queue);
-      case _:
-        return orElse();
-    }
-  }
-
-  /// A `switch`-like method, using callbacks.
-  ///
-  /// As opposed to `map`, this offers destructuring.
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case Subclass2(:final field2):
-  ///     return ...;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function(List<SnackbarQueueEntry> queue) $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueState():
-        return $default(_that.queue);
-      case _:
-        throw StateError('Unexpected subclass');
-    }
-  }
-
-  /// A variant of `when` that fallback to returning `null`
-  ///
-  /// It is equivalent to doing:
-  /// ```dart
-  /// switch (sealedClass) {
-  ///   case Subclass(:final field):
-  ///     return ...;
-  ///   case _:
-  ///     return null;
-  /// }
-  /// ```
-
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function(List<SnackbarQueueEntry> queue)? $default,
-  ) {
-    final _that = this;
-    switch (_that) {
-      case _SnackbarQueueState() when $default != null:
-        return $default(_that.queue);
-      case _:
-        return null;
-    }
-  }
-}
-
 /// @nodoc
 
-class _SnackbarQueueState implements SnackbarQueueState {
-  const _SnackbarQueueState({required final List<SnackbarQueueEntry> queue})
+class _$SnackbarQueueStateImpl implements _SnackbarQueueState {
+  const _$SnackbarQueueStateImpl(
+      {required final List<SnackbarQueueEntry> queue})
       : _queue = queue;
 
   /// List of snackbar entries in the queue.
@@ -617,19 +325,16 @@ class _SnackbarQueueState implements SnackbarQueueState {
     return EqualUnmodifiableListView(_queue);
   }
 
-  /// Create a copy of SnackbarQueueState
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @pragma('vm:prefer-inline')
-  _$SnackbarQueueStateCopyWith<_SnackbarQueueState> get copyWith =>
-      __$SnackbarQueueStateCopyWithImpl<_SnackbarQueueState>(this, _$identity);
+  String toString() {
+    return 'SnackbarQueueState(queue: $queue)';
+  }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _SnackbarQueueState &&
+            other is _$SnackbarQueueStateImpl &&
             const DeepCollectionEquality().equals(other._queue, _queue));
   }
 
@@ -637,45 +342,29 @@ class _SnackbarQueueState implements SnackbarQueueState {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_queue));
 
+  /// Create a copy of SnackbarQueueState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  String toString() {
-    return 'SnackbarQueueState(queue: $queue)';
-  }
+  @pragma('vm:prefer-inline')
+  _$$SnackbarQueueStateImplCopyWith<_$SnackbarQueueStateImpl> get copyWith =>
+      __$$SnackbarQueueStateImplCopyWithImpl<_$SnackbarQueueStateImpl>(
+          this, _$identity);
 }
 
-/// @nodoc
-abstract mixin class _$SnackbarQueueStateCopyWith<$Res>
-    implements $SnackbarQueueStateCopyWith<$Res> {
-  factory _$SnackbarQueueStateCopyWith(
-          _SnackbarQueueState value, $Res Function(_SnackbarQueueState) _then) =
-      __$SnackbarQueueStateCopyWithImpl;
+abstract class _SnackbarQueueState implements SnackbarQueueState {
+  const factory _SnackbarQueueState(
+          {required final List<SnackbarQueueEntry> queue}) =
+      _$SnackbarQueueStateImpl;
+
+  /// List of snackbar entries in the queue.
   @override
-  @useResult
-  $Res call({List<SnackbarQueueEntry> queue});
-}
-
-/// @nodoc
-class __$SnackbarQueueStateCopyWithImpl<$Res>
-    implements _$SnackbarQueueStateCopyWith<$Res> {
-  __$SnackbarQueueStateCopyWithImpl(this._self, this._then);
-
-  final _SnackbarQueueState _self;
-  final $Res Function(_SnackbarQueueState) _then;
+  List<SnackbarQueueEntry> get queue;
 
   /// Create a copy of SnackbarQueueState
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @pragma('vm:prefer-inline')
-  $Res call({
-    Object? queue = null,
-  }) {
-    return _then(_SnackbarQueueState(
-      queue: null == queue
-          ? _self._queue
-          : queue // ignore: cast_nullable_to_non_nullable
-              as List<SnackbarQueueEntry>,
-    ));
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$SnackbarQueueStateImplCopyWith<_$SnackbarQueueStateImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
-
-// dart format on

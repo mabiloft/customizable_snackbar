@@ -22,7 +22,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  customizable_snackbar: ^1.1.0
+  customizable_snackbar: ^1.1.1
 ```
 
 Then run:
